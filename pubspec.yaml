@@ -1,7 +1,7 @@
 name: open_app_settings
 description: A remaster plugin of app_settings. app_setting use Kotlin and Swift may cause build issue, so this plugin used Java and ObjC.
 version: 1.0.0
-homepage: mjl0602@gmail.com
+homepage: https://github.com/mjl0602/open_app_settings
 repository: https://github.com/mjl0602/open_app_settings
 
 environment:
