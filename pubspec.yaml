@@ -1,12 +1,13 @@
 name: open_app_settings
 description: A remaster plugin of app_settings. app_setting use Kotlin and Swift may cause build issue, so this plugin used Java and ObjC.
-version: 1.0.0
+version: 2.0.0-nullsafety.1
 homepage: https://github.com/mjl0602/open_app_settings
 repository: https://github.com/mjl0602/open_app_settings
+publish_to: https://pub.dartlang.org
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.20.0 <2.0.0"
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
