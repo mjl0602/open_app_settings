@@ -121,8 +121,9 @@ public class OpenAppSettingsPlugin implements ActivityAware, FlutterPlugin, Meth
             openSettings(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
         } else if (call.method.equals("app_settings")) {
             openAppSettings();
-        } else {
-			openSettings(call.method);
+        } else if (call.method.equals("android")) {
+			if(call.hasArgument("setting"))
+				openSettings((String) call.argument("setting"));
 		}
     }
 
