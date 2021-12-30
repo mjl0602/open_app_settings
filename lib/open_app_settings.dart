@@ -45,8 +45,11 @@ class OpenAppSettings {
   /// Future async method call to open app specific settings screen.
   static Future<void> openAppSettings() async => _to('app_settings');
 
+  /// Future async method call to open app specific settings screen.
+  static Future<void> openAndroidCustomSetting(String constantValue) async => _to("android", args: {"setting": constantValue});
+
   /// Future async method call to open NCF settings.
   static Future<void> openNFCSettings() async => _to('nfc');
 
-  static _to(String tag) => _channel.invokeMethod(tag);
+  static _to(String tag, {Map<String, String>? args}) => _channel.invokeMethod(tag, args ?? {});
 }
